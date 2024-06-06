@@ -17,34 +17,33 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
+  <link rel="preload" href="assets/fonts/Outfit-Light.ttf" as="font" crossorigin="">
+  <link rel="preload" href="assets/fonts/Outfit-Medium.ttf" as="font" crossorigin="">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<a href="#" title="Home">
+  <div id="container">
+<a href="#" title="Home" >
   <svg width="33" height="27" xmlns="http://www.w3.org/2000/svg"><path d="m26.463.408 3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-1.6a3.186 3.186 0 0 0-3.184 3.2l-.016 19.2a3.2 3.2 0 0 0 3.2 3.2h25.6a3.2 3.2 0 0 0 3.2-3.2V.408h-6.4Z" fill="#FC4747"/></svg>
 </a>
-<br>
   <div id="main">
     <label for="login">Login</label>
     <form id="login">
-      <input type="email" id="email" placeholder="Email adresse" required>
-      <br>
+      <div id="inputs">
+      <input type="email" id="email" placeholder="Email address" required>
       <input type="password" id="password" placeholder="Password" required minlength="8">
-      <br>
+    </div>
       <input type="submit" id="submit" value="Login to your account">
-      <br>
-      <p>Don’t have an account? <span id="linksign">
-                                  <a href="/signup.html" title="Signup" >Sign up</a></span>
-      </p>
-
-      <br>
-
     </form>
+    <div id="n">
+      <p>Don’t have an account? <span id="linksign">
+                                  <a href="/signup.html" title="Signup" >Sign Up</a></span>
+      </p>
+      </div>
   </div>
-
+  </div>
 
 
 
