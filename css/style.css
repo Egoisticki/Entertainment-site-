@@ -183,6 +183,7 @@ background-color: var(--color-semi-dark-blue);
   border-bottom:var(--color-greyish-blue) 1px solid ;
   padding-bottom: 15px;
   padding-left: 15px;
+  caret-color:var(--color-red);
 
 }
 
