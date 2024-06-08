@@ -169,7 +169,7 @@ a{
 }
 a:hover{
   color: var(--color-white);
-background-color: var(--color-semi-dark-blue);
+background-color: var(--color-red);
   }
 
 #email,#password,#password1{

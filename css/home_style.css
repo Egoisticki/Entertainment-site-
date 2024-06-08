@@ -118,32 +118,100 @@ body{
 }
 nav{
     background-color: var(--color-semi-dark-blue);
-    width:100px ;
+    width:90px ;
     height: 900px;
     border-radius: 16px;
     position: relative;
     left: 30px;
     top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+  position: fixed;
+  top: 70px;
+  left: 60px;
+  width: 50px;
+  height: 50px;
+}
+#logo svg{
+  width: 100%;
+  height: 100%;
 }
 #choice{
-width: 16px;
-height: 100px;
-background-color: #000;
+width: 20px;
+height: 150px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin-top: 140px;
 }
 #choice svg{
    width: 20px;
    height: 20px;
 }
-#choice svg :hover{
+#choice svg {
+  transition: fill 0.2s ease-in-out;
+
+}
+#choice svg path:hover{
     fill: var(--color-red);
-    transition: fill,1s,ease;
 
 }
-#choice svg.active path  {
-    fill: var(--color-white);
-    transition: fill,1s,ease;
+#choice svg.selected path:hover {
+  fill: var(--color-red);
 }
-
+#choice svg.selected path {
+  fill: var(--color-white);
+}
+#profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: 30px;
+  border: var(--color-white) 1px solid;
+}
+#profile img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#profile img:hover{
+  cursor: pointer;
+}
+#profile_clicked
+{
+  background-color: var(--color-semi-dark-blue);
+  position: fixed;
+  bottom: 50px;
+  left: 150px;
+  width: 200px;
+  height:110px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+#login,#signup{
+  background-color: var(--color-red);
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  height:30px;
+  color: var(--color-white);
+  font-size: var(--font-size-body-m);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px ;
+}
+#login:hover,#signup:hover{
+  background-color: var(--color-white);
+  color: var(--color-red);
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -304,4 +372,3 @@ background-color: #000;
     page-break-after: avoid;
   }
 }
-
